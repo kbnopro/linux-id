@@ -14,16 +14,16 @@ import (
 	"time"
 
 	cbor "github.com/fxamacker/cbor/v2"
-	"github.com/matejsmycka/linux-id/attestation" // used for CTAP1 registerSite
-	"github.com/matejsmycka/linux-id/ctap2"
-	"github.com/matejsmycka/linux-id/fidoauth"
-	"github.com/matejsmycka/linux-id/fidohid"
-	"github.com/matejsmycka/linux-id/fprintd"
-	"github.com/matejsmycka/linux-id/memory"
-	"github.com/matejsmycka/linux-id/pinentry"
-	"github.com/matejsmycka/linux-id/sitesignatures"
-	"github.com/matejsmycka/linux-id/statuscode"
-	"github.com/matejsmycka/linux-id/tpm"
+	"github.com/kbnopro/linux-id/attestation" // used for CTAP1 registerSite
+	"github.com/kbnopro/linux-id/ctap2"
+	"github.com/kbnopro/linux-id/fidoauth"
+	"github.com/kbnopro/linux-id/fidohid"
+	"github.com/kbnopro/linux-id/fprintd"
+	"github.com/kbnopro/linux-id/memory"
+	"github.com/kbnopro/linux-id/pinentry"
+	"github.com/kbnopro/linux-id/sitesignatures"
+	"github.com/kbnopro/linux-id/statuscode"
+	"github.com/kbnopro/linux-id/tpm"
 )
 
 var backend = flag.String("backend", "tpm", "tpm|memory")

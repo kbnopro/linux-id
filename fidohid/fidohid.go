@@ -8,7 +8,7 @@ import (
 	"io"
 	"log"
 
-	"github.com/matejsmycka/linux-id/fidoauth"
+	"github.com/kbnopro/linux-id/fidoauth"
 	"github.com/psanford/uhid"
 )
 
@@ -430,7 +430,7 @@ func newInitResponse(channelID uint32, nonce [8]byte) *initResponse {
 		MajorDeviceVersion: deviceMajor,
 		MinorDeviceVersion: deviceMinor,
 		BuildDeviceVersion: deviceBuild,
-		RawCapabilities: cborCapability,
+		RawCapabilities:    cborCapability,
 	}
 }
 

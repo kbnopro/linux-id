@@ -1,4 +1,4 @@
-module github.com/matejsmycka/linux-id
+module github.com/kbnopro/linux-id
 
 go 1.25.0
 
